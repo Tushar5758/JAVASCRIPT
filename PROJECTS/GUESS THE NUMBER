@@ -1,0 +1,21 @@
+console.log("GUESS THE NUMBER:");
+alert("The random number has been fixed in the system already. \n Can you guess it..? \n Kindly guess the number between 0 -100")
+let a= Math.floor(Math.random() * 100);
+let chance=0
+let n;
+do
+  {
+    n=prompt("Enter your guessed number(0-100):")
+    n=Number.parseInt(n);
+    if(n<a)
+    {
+      alert("Kuch bada soch.. \n Plese try again...")
+    }
+    else if(n>a)
+    {
+       alert("Jyada aage mt jaa , piche aa.. \n Plese try again...")
+    }
+    chance++;
+  }while(n!=a)
+console.log("You guessed it correctly..")
+console.log("Congratulations... Your Score : ",100-chance);
