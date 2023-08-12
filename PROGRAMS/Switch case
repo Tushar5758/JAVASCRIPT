@@ -1,0 +1,25 @@
+let a=prompt("enter the  number");
+Number.parseInt(a);
+console.log((a%2==0 && a%3==0)?"yes":"no");
+let q=a/10;
+switch(q)
+  {
+    case 1:
+    case 2:
+    case 3:
+       console.log("fail");
+      break;
+    case 4:
+    case 5:
+    case 6:
+      
+      console.log("pass");
+      break;
+    case 7:
+      console.log("disntiction");
+      break;
+    case 8:
+    case 9:
+      console.log("A GRADE");
+      break;
+  }
