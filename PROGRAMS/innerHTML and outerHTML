@@ -1,0 +1,24 @@
+let x = document.getElementsByTagName('span')[0]
+console.log(x)
+let y = document.getElementsByTagName('span')[0]
+console.dir(y)
+console.log(document.body.firstChild.tagName) 
+console.log(document.body.firstElementChild.nodeName)
+
+first.innerHTML 
+first.innerHTML = "<i>hey I am italic</i>" 
+first.outerHTML 
+first.outerHTML = "<div>hey</div>"
+document.body.firstChild.data 
+console.log(document.body.textContent)
+first.hidden = false
+first.innerHTML="<p>hey Tushar here<\p>"
+console.log(first.innerHTML)
+reload the page to see the change
+console.log(first.outerHTML); // output: <span>Hey I am span</span>
+first.outerHTML = "<div>Hey</div>";
+console.log(document.body.firstChild); // " Hello World "
+first.textContent = "Hey I am changed"; 
+
+
+// reload the page to see the change
