@@ -1,0 +1,57 @@
+alert("....WELCOME...... \n Stone_Paper_Scissor \n Let's Play \n You will have 10 chances")
+
+let word = ['S', 'P', 'C']
+let i;
+let comp_point = 0;
+let user_point = 0;
+let drawn = 0;
+
+let game = true || false;
+
+while (game) {
+  for (let i = 1; i <= 10; i++) {
+    let user = prompt("Enter you choice : Stone(S) Paper(P) Scissor(C)");
+    let comp = word[Math.round(Math.random() * 3)];;
+    if (comp == "S" && user == "P") {
+      user_point++;
+      alert("Point credited in User's account..")
+    }
+    else if (comp == "P" && user == "C") {
+      user_point++;
+      alert("Point credited in User's account..")
+    }
+    else if (comp == "C" && user == "S") {
+      user_point++;
+      alert("Point credited in User's account..")
+    }
+    else if (comp == "C" && user == "P") {
+      comp_point++;
+      alert("Point credited in computer's account..")
+    }
+    else if (comp == "S" && user == "C") {
+      comp_point++;
+      alert("Point credited in computer's account..")
+    }
+    else if (comp == "P" && user == "S") {
+      comp_point++;
+      alert("Point credited in computer's account..")
+    }
+    else {
+      alert("Similar choices , No credit to anyone..")
+      drawn++;
+    }
+  }
+  if (user_point > comp_point) {
+    alert("Congratulations.... YOU WON")
+
+  }
+  else if (user_point > comp_point) {
+    alert("Ypu Lose.. Beter Luck Next Time...")
+
+  }
+  else if (user_point == comp_point || drawn == 10) {
+    alert("DRAWN...")
+
+  }
+  game = confirm("Do you want to play again ...?")
+}
