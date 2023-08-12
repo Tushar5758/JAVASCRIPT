@@ -1,0 +1,32 @@
+let obj = {
+  tushar : 98,
+  prem : 85,
+  ashok : 55
+  
+}
+for(let b in obj)
+  {
+    console.log("marks of"+b+"is"+obj[b]);
+  }
+for(let i=0;i<Object.keys(obj).length;i++)
+  {
+    console.log("marks of "+Object.keys(obj)[i]+" are "+ obj(Object.keys(obj)[i]));
+  }
+
+let a=21;
+let b;
+while(a!=b)
+  {
+     b=prompt("enter y0ur number");
+    if(a!=b)
+    {
+      console.log("try again....")
+    }
+  }
+console.log("correct no.entered");
+
+
+function mean(a,b,c,d,e) {
+  return (a+b+c+d+e)/5;
+}
+console.log("avaerage is "+mean(15,87,52,47,98))
